@@ -16,8 +16,8 @@ public class RegistrationTests extends TestBase {
 
     @Test
     public void registrationSuccess() {
-        User user= new User().setEmail("('fox' + i + '@gmail.com')").setPassword("4567QQqq$$");
         int i = (int) System.currentTimeMillis()/1000;
+        User user= new User().setEmail("fox" + i + "@gmail.com").setPassword("4567QQqq$$");
         app.getHelperUser().openLoginRegistrationForm();
         app.getHelperUser().fillLoginRegistrationForm(user);
         app.getHelperUser().submitRegistration();
