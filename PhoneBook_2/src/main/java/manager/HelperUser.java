@@ -24,6 +24,7 @@ public class HelperUser extends HelperBase{
     }
 
     public void submitLogin() {
+
         wd.findElement(By.xpath("//button[1]")).click();
     }
 

@@ -11,7 +11,13 @@ public class HelperBase {
 
         this.wd = wd;
     }
-
+    public void pause(int time) {
+        try {
+            Thread.sleep(time);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
     public void type(By locator, String text){
         if(text!=null){
             WebElement element = wd.findElement(locator);
@@ -22,6 +28,11 @@ public class HelperBase {
     }
 
     public void click(By locator){
+
         wd.findElement(locator).click();
+    }
+    public void submit() {
+        wd.findElement(By.xpath("//div//button//b")).click();
+
     }
 }
