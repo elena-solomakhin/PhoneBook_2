@@ -40,3 +40,4 @@ public class AddNewContact extends TestBase{
     }
 
 }
+

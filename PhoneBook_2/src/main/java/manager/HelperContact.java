@@ -50,4 +50,18 @@ public class HelperContact extends HelperBase {
         }
         return false;
     }
+
+    public void openContacts() {
+        click(By.cssSelector("a[href='/contacts']"));
+    }
+
+    public void  deleteContact() {
+
+     click(By.cssSelector("div.contact-item_card__2SOIM"));
+     click(By.xpath("//button[text()='Remove']"));
+    }
+
+    public int getContactCount() {
+        return wd.findElements(By.cssSelector(".contact-item_card__2SOIM")).size();
+    }
 }
