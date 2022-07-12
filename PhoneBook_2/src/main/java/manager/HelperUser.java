@@ -12,12 +12,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.List;
 
-public class HelperUser extends HelperBase{
+public class HelperUser extends HelperBase {
 
 
     public HelperUser(WebDriver wd) {
         super(wd);
     }
+
     public void openLoginRegistrationForm() {
         WebElement loginTab = wd.findElement(By.cssSelector("a[href='/login']"));
         loginTab.click();
@@ -43,8 +44,8 @@ public class HelperUser extends HelperBase{
 
     public boolean isLogged() {
         // sign out present? --> logged
-        List<WebElement > list =wd.findElements(By.xpath("//button[text()='Sign Out']"));
-        return list.size()>0;
+        List<WebElement> list = wd.findElements(By.xpath("//button[text()='Sign Out']"));
+        return list.size() > 0;
     }
 
     public void logout() {
@@ -53,25 +54,32 @@ public class HelperUser extends HelperBase{
 
     public boolean isAlertDisplayed() {
         //wait to present
-        Alert alert=new WebDriverWait(wd, Duration.ofSeconds(5))
+        Alert alert = new WebDriverWait(wd, Duration.ofSeconds(5))
                 .until(ExpectedConditions.alertIsPresent()); //is alert present
-    if (alert==null){
-        return false;
-    }
-    else{
-        return true;
-    }
+        if (alert == null) {
+            return false;
+        } else {
+            return true;
+        }
     }
 
     public boolean isErrorFormatDisplayed() {
-        Alert alert =wd.switchTo().alert();
+        Alert alert = wd.switchTo().alert();
 //        alert.getText();// get text
 //        alert.sendKeys("hello world");//type text in alert
 //        alert.accept();//click ok button
 //        alert.dismiss();
-        String errorText= alert.getText();
+        String errorText = alert.getText();
         System.out.println(errorText);
         alert.accept();
         return errorText.contains("Wrong email or password format");
+    }
+
+    public void login(User user) {
+        openLoginRegistrationForm();
+        type(By.xpath("//input[1]"), user.getEmail());
+        type(By.xpath("//input[2]"), user.getPassword());
+        submitLogin();
+
     }
 }

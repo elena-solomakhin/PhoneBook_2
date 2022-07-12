@@ -32,7 +32,7 @@ public class HelperBase {
         wd.findElement(locator).click();
     }
     public void submit() {
-        wd.findElement(By.xpath("//div//button//b")).click();
+        wd.findElement(By.xpath("//div//button//b")).click(); //button b
 
     }
 }
