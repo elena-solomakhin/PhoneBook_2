@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.DeleteContact" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-07-16T08:18:00" hostname="Elenas-MacBook-Air.local" time="16.427">
+  <properties/>
+  <testcase name="removeAllContactsSuccess" classname="tests.DeleteContact" time="7.741"/>
+  <testcase name="removeOneContactSuccess" classname="tests.DeleteContact" time="0.834"/>
+  <system-out><![CDATA[11:17:50.044  INFO  tests.TestBase - start method===removeAllContactsSuccess
+11:18:08.136  INFO  tests.TestBase - start method===removeOneContactSuccess
+11:18:16.209  INFO  manager.HelperBase - Count before remove is 3
+11:18:16.218  INFO  manager.HelperBase - List of Contact not Empty
+11:18:16.810  INFO  manager.HelperBase - Count after remove is 2
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

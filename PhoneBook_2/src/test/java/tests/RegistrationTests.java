@@ -13,7 +13,6 @@ public class RegistrationTests extends TestBase {
         }
 
     }
-
     @Test
     public void registrationSuccess() {
         int i = (int) System.currentTimeMillis()/1000;
@@ -21,7 +20,6 @@ public class RegistrationTests extends TestBase {
         app.getHelperUser().openLoginRegistrationForm();
         app.getHelperUser().fillLoginRegistrationForm(user);
         app.getHelperUser().submitRegistration();
-
     }
 
 

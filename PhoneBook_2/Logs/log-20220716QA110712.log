@@ -1,0 +1,18 @@
+11:07:21.817  INFO  manager.ApplicationManager - All tests run in Chrome browser
+11:07:22.836  INFO  manager.ApplicationManager - current url ---- https://contacts-app.tobbymarshall815.vercel.app/home
+11:07:22.925  INFO  tests.TestBase - start method===addNewContactSuccess
+11:07:28.578  INFO  tests.TestBase - user
+11:07:31.080  INFO  tests.TestBase - Check name - Mara1567
+11:07:31.131  INFO  tests.TestBase - Check phone -0832341567
+11:07:31.138  INFO  tests.TestBase - start method===addNewContactSuccess
+11:07:32.147  INFO  tests.TestBase - Check name - Mara1803
+11:07:32.179  INFO  tests.TestBase - Check phone -0832341803
+11:07:32.184  INFO  tests.TestBase - start method===addNewContactSuccess
+11:07:33.192  INFO  tests.TestBase - Check name - Mara1563
+11:07:33.234  INFO  tests.TestBase - Check phone -0832341563
+11:07:33.242  INFO  tests.TestBase - start method===addNewContactSuccess
+11:07:34.001  INFO  tests.TestBase - Check name - Mara1274
+11:07:34.042  INFO  tests.TestBase - Check phone -0832341274
+11:07:34.043  INFO  tests.TestBase - start method===addNewContactSuccess
+11:07:34.811  INFO  tests.TestBase - Check name - Mara1741
+11:07:34.861  INFO  tests.TestBase - Check phone -0832341741

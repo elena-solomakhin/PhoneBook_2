@@ -1,0 +1,25 @@
+10:35:19.807  INFO  manager.ApplicationManager - All tests run in Chrome browser
+10:35:20.826  INFO  manager.ApplicationManager - current url ---- https://contacts-app.tobbymarshall815.vercel.app/home
+10:35:20.905  INFO  tests.TestBase - start method===addNewContactSuccess
+10:35:26.554  INFO  tests.TestBase - user
+10:35:28.988  INFO  tests.TestBase - Check name - Mara1526
+10:35:29.043  INFO  tests.TestBase - Check phone -0832341526
+10:35:29.051  INFO  tests.TestBase - start method===addNewContactSuccess
+10:35:30.111  INFO  tests.TestBase - Check name - Mara1528
+10:35:30.145  INFO  tests.TestBase - Check phone -0832341528
+10:35:30.149  INFO  tests.TestBase - start method===addNewContactSuccess
+10:35:31.113  INFO  tests.TestBase - Check name - Mara1531
+10:35:31.152  INFO  tests.TestBase - Check phone -0832341531
+10:35:31.153  INFO  tests.TestBase - start method===addNewContactSuccess
+10:35:31.944  INFO  tests.TestBase - Check name - Mara1285
+10:35:31.986  INFO  tests.TestBase - Check phone -0832341285
+10:35:31.995  INFO  tests.TestBase - start method===addNewContactSuccess
+10:35:32.887  INFO  tests.TestBase - Check name - Mara1154
+10:35:32.940  INFO  tests.TestBase - Check phone -0832341154
+10:35:32.951  INFO  tests.TestBase - start method===DeleteAllContact
+10:35:41.033  INFO  tests.TestBase - start method===removeOneContact
+10:35:46.111  INFO  manager.HelperBase - Count before remove 0
+10:35:56.185  INFO  manager.HelperBase - Count after remove 0
+10:35:56.244  INFO  tests.TestBase - start method===loginASuccess
+10:35:56.826  INFO  tests.TestBase - start method===loginNegativeTestsWrongEmail
+10:35:57.275  INFO  tests.TestBase - start method===registrationSuccess
