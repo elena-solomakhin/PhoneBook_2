@@ -1,0 +1,13 @@
+22:38:57.092  INFO  manager.ApplicationManager - All tests run in Chrome browser
+22:38:58.292  INFO  manager.ApplicationManager - current url ---- https://contacts-app.tobbymarshall815.vercel.app/home
+22:38:58.363  INFO  tests.TestBase - start method===loginASuccess
+22:38:58.365  INFO  manager.MyListener - Before find by --->By.xpath: //button[text()='Sign Out']
+22:39:03.396  INFO  manager.MyListener - Web Driver find element--->By.cssSelector: a[href='/login']
+22:39:03.465  INFO  manager.MyListener - Web Driver found element--->By.cssSelector: a[href='/login']
+22:39:03.650  INFO  manager.MyListener - Web Driver find element--->By.xpath: //input[1]
+22:39:03.699  INFO  manager.MyListener - Web Driver found element--->By.xpath: //input[1]
+22:39:03.893  INFO  manager.MyListener - Web Driver find element--->By.xpath: //input[2]
+22:39:03.963  INFO  manager.MyListener - Web Driver found element--->By.xpath: //input[2]
+22:39:04.041  INFO  manager.MyListener - Web Driver find element--->By.xpath: //button[1]
+22:39:04.076  INFO  manager.MyListener - Web Driver found element--->By.xpath: //button[1]
+22:39:04.129  INFO  manager.MyListener - Before find by --->By.xpath: //button[text()='Sign Out']

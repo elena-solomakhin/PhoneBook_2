@@ -8,7 +8,8 @@ import org.slf4j.LoggerFactory;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.util.logging.Logger;
+
+import org.slf4j.Logger;
 
 public class MyListener implements WebDriverListener {
     Logger logger= (Logger) LoggerFactory.getLogger(MyListener.class);
@@ -35,5 +36,6 @@ public class MyListener implements WebDriverListener {
     @Override
     public void onError(Object target, Method method, Object[] args, InvocationTargetException e) {
         WebDriverListener.super.onError(target, method, args, e);
-    }
+        logger.info("The name of method with error -->" +method.getName());
+        logger.info("We have a problem ---> " +e.getTargetException().fillInStackTrace());}
 }

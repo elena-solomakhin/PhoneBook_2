@@ -1,0 +1,19 @@
+22:54:13.579  INFO  manager.ApplicationManager - All tests run in Chrome browser
+22:54:14.801  INFO  manager.ApplicationManager - current url ---- https://contacts-app.tobbymarshall815.vercel.app/home
+22:54:14.871  INFO  tests.TestBase - start method===loginASuccess
+22:54:14.874  INFO  manager.MyListener - Before find by --->By.xpath: //button[text()='Sign Out']
+22:54:19.932  INFO  manager.MyListener - Web Driver find element--->By.cssSelector: a[href='/login']
+22:54:20.008  INFO  manager.MyListener - Web Driver found element--->By.cssSelector: a[href='/login']
+22:54:20.196  INFO  manager.MyListener - Web Driver find element--->By.xpath: //input[1]
+22:54:20.254  INFO  manager.MyListener - Web Driver found element--->By.xpath: //input[1]
+22:54:21.285  INFO  manager.MyListener - Web Driver find element--->By.xpath: //d
+22:54:26.334  INFO  manager.MyListener - The name of method with error -->findElement
+22:54:26.356  INFO  manager.MyListener - We have a problem ---> org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//d"}
+  (Session info: chrome=100.0.4896.75)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'Elenas-MacBook-Air.local', ip: 'fe80:0:0:0:869:d16d:35a5:e70d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7b4ca350d39dba72b0fe3fe6e6b2cc95, findElement {using=xpath, value=//d}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: /var/folders/ml/_zfjgb895b7...}, goog:chromeOptions: {debuggerAddress: localhost:61475}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:61475/devtoo..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7b4ca350d39dba72b0fe3fe6e6b2cc95
