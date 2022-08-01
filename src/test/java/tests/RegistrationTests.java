@@ -6,14 +6,14 @@ import org.testng.annotations.Test;
 
 public class RegistrationTests extends TestBase {
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void preCondition() {
         if (app.getHelperUser().isLogged()) {
             app.getHelperUser().logout();
         }
 
     }
-    @Test
+    @Test(groups = {"web"})
     public void registrationSuccess() {
         int i = (int) System.currentTimeMillis()/1000;
         User user= new User().setEmail("fox" + i + "@gmail.com").setPassword("4567QQqq$$");

@@ -37,7 +37,7 @@ public class HelperUser extends HelperBase {
 
         // find +click+clear+sendKey
         type(By.xpath("//input[1]"), user.getEmail());
-takeScreenShots("/Users/elenasolomakhina/Study/AutomatQA34/Progects/PhoneBook_2/PhoneBook_2/src/test/screenShots/screen-1.png");
+takeScreenShots("/Users/elenasolomakhina/Study/AutomatQA34/Progects/PhoneBook_2/src/test/screenShots/screen-1.png");
         // find +click+clear+sendKey
         type(By.xpath("//d"), user.getPassword());
       //  "//input[2]"

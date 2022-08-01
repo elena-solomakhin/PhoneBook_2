@@ -1,0 +1,10 @@
+21:44:17.887  INFO  tests.TestBase - start method===addNewContactSuccess
+21:44:17.893  INFO  tests.TestBase - start method===addNewContactSuccess
+21:44:17.897  INFO  tests.TestBase - start method===addNewContactSuccess
+21:44:17.899  INFO  tests.TestBase - start method===addNewContactSuccess
+21:44:17.901  INFO  tests.TestBase - start method===addNewContactSuccess
+21:44:17.906  INFO  tests.TestBase - start method===removeAllContactsSuccess
+21:44:17.912  INFO  tests.TestBase - start method===removeOneContactSuccess
+21:44:17.921  INFO  tests.TestBase - start method===loginASuccess
+21:44:17.942  INFO  tests.TestBase - start method===loginNegativeTestsWrongEmail
+21:44:17.959  INFO  tests.TestBase - start method===registrationSuccess
