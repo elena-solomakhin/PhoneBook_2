@@ -25,7 +25,7 @@ public class HelperContact extends HelperBase{
 
     public void fillContactForm(Contact contact) {
         type(By.cssSelector("[placeholder='Name']"),contact.getName());
-        type(By.cssSelector("[placeholder='Last Name']"),contact.getLastName());
+        type(By.cssSelector("[placeholder='Last Name']"),contact.getLastname());
         type(By.cssSelector("[placeholder='Phone']"),contact.getPhone());
         type(By.cssSelector("[placeholder='email']"),contact.getEmail());
         type(By.cssSelector("[placeholder='Address']"),contact.getAddress());
@@ -111,7 +111,7 @@ public class HelperContact extends HelperBase{
                 openContactForm();
                 fillContactForm(Contact.builder()
                         .name("John-"+index)
-                        .lastName("Wick")
+                        .lastname("Wick")
                         .email("wick-"+index+"@mail.com")
                         .phone("12121234"+i)
                         .address("NY")

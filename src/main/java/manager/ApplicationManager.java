@@ -1,6 +1,5 @@
 package manager;
 
-import dev.failsafe.internal.util.Durations;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -16,13 +15,14 @@ public class ApplicationManager {
 
     WebDriver wd;
     HelperUser helperUser;
-    HelperContact contact;//1
+    HelperContact contact;
     String browser;
 
     public ApplicationManager(String browser) {
         this.browser = browser;
     }
-    Logger logger= LoggerFactory.getLogger(ApplicationManager.class);
+
+    Logger logger = LoggerFactory.getLogger(ApplicationManager.class);
     public void init(){
         if(browser.equals(Browser.CHROME.browserName())) {
             wd=new ChromeDriver();
@@ -32,16 +32,16 @@ public class ApplicationManager {
             logger.info("All tests run in 'FIREFOX' browser");
         }
 
-        WebDriverListener listener= new MyListener();
-        wd= new EventFiringDecorator(listener).decorate(wd);
-        logger.info("All tests run in Chrome browser");
+
+        WebDriverListener listener = new MyListener();
+        wd = new EventFiringDecorator(listener).decorate(wd);
 
         wd.manage().window().maximize();
         wd.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         wd.navigate().to("https://contacts-app.tobbymarshall815.vercel.app/");
-        logger.info("current url ---- "+wd.getCurrentUrl());
+        logger.info("Current Url ---> "+ wd.getCurrentUrl());
         helperUser=new HelperUser(wd);
-        contact= new HelperContact(wd);//2
+        contact = new HelperContact(wd);
 
     }
 
@@ -55,7 +55,7 @@ public class ApplicationManager {
         return helperUser;
     }
 
-    public HelperContact contact() {  //3
+    public HelperContact contact() {
         return contact;
     }
 }

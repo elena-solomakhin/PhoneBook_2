@@ -1,43 +1,45 @@
 package tests;
 
-import models.User;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+
 public class LoginTests extends TestBase {
 
-    @BeforeMethod(alwaysRun = true)
+    @BeforeMethod (alwaysRun = true)
     public void preCondition() {
-        if (app.getHelperUser().isLogged()) {
+        if(app.getHelperUser().isLogged()){
             app.getHelperUser().logout();
         }
 
     }
 
+
     @Test(groups = {"web"})
-    public void loginASuccess() {
-        User user= new User().setEmail("noa5@gmail.com").setPassword("4567QQqq$$");
+    public void loginSuccess() {
+
         app.getHelperUser().openLoginRegistrationForm();
-        app.getHelperUser().fillLoginRegistrationForm(user);
+        app.getHelperUser().fillLoginRegistrationForm("noa@gmail.com", "Nnoa12345$");
         app.getHelperUser().submitLogin();
         Assert.assertTrue(app.getHelperUser().isLogged());
-
-        // 6.Assert ( is login success?)   logout present?PRESENT
+        app.getHelperUser().pause(5000);
 
     }
 
     @Test
     public void loginNegativeTestsWrongEmail() {
-        User user= new User().setEmail("noagmail.com").setPassword("45689888");
+
         app.getHelperUser().openLoginRegistrationForm();
-        app.getHelperUser().fillLoginRegistrationForm(user);
+        app.getHelperUser().fillLoginRegistrationForm("noagmail.com", "Nnoa12345$");
         app.getHelperUser().submitLogin();
-//        Assert.assertFalse(app.getHelperUser().isLogged());
+
+        // Assert.assertFalse(app.getHelperUser().isLogged());
         Assert.assertTrue(app.getHelperUser().isAlertDisplayed());
         Assert.assertTrue(app.getHelperUser().isErrorFormatDisplayed());
-        // 6.Assert ( is login unsuccessful?)   logout present? NOT
+
 
     }
+
 
 }

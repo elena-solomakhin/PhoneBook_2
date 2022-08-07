@@ -1,0 +1,6 @@
+14:43:12.614  INFO  tests.TestBase - Start method with name -->loginNegativeTestsWrongEmail
+14:43:12.629  INFO  tests.TestBase - Start method with name -->loginSuccess
+14:43:12.644  INFO  tests.TestBase - Start method with name -->registrationSuccess
+14:43:12.654  INFO  tests.TestBase - Start method with name -->addNewContactSuccess
+14:43:12.666  INFO  tests.TestBase - Start method with name -->removeAllContactsSuccess
+14:43:12.671  INFO  tests.TestBase - Start method with name -->removeOneContactSuccess
